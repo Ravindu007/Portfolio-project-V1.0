@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color:black;
+  color:white ;
+  font-family:'Lato', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeSpeed;
+}
+
+.row{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*-----------------------  sections  --------------------------*/
+/*----------------------------------------------------------------*/
+
+.section-main{
+  position: relative;
+  float: left;
+  background-color:white;
+  color:rgb(187, 240, 14);
+  width: 65%;
+  height: 100vh;
+}
+
+.section-fix{
+  float: left;
+  background-color:black;
+  width: 35%;
+  height: 100vh;
+  
+}
+
+.social-media{
+  position: absolute;
+  margin-top: 65vh;
+  background-color: rgba(42, 104, 104, 0.287);
+  width: 35%;
+  height: 28vh;
+
+}
+/*----------------------------------------------------------------*/
+/*-----------------------  section-main  --------------------------*/
+/*----------------------------------------------------------------*/
+
+.about-box{
+  text-align: center;
+  background:fixed;
+  position: absolute;
+  
+  margin-left:2px;
+  margin-right: 2px;
+  
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------*/
+/*-----------------------  section fix --------------------------*/
+/*----------------------------------------------------------------*/
+
+/*-----------------------  navigation  --------------------------*/
+
+.main-nav li{
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  color:#fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  color:aqua;
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 2px aqua solid;
+}
+
+/*-----------------------  profile-pic  --------------------------*/
+.section-fix img{
+  position:absolute ;
+  margin-left:100px;
+  margin-top: 100px;
+  width:275px;
+  height: 275px;
+  border-radius: 50%;
+  transition: transform 0.4s;
+  
+}
+.section-fix img:hover{
+  transform: scale(1.5);
+}
+
+/*----------section social-media------------------------------------*/
+.social-media-icons li{
+  margin: 50px 15px;
+  display: inline-block;
+}
+
+.social-media-icons a:link,
+.social-media-icons a:visited{
+  font-size:200%;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.social-media-icons a:hover,
+.social-media-icons a:active{
+  color: aqua;
+  transform: scale(1.5);
+}
